@@ -35,7 +35,7 @@ class Movie {
             plot = dictionary["Plot"] ?? "NA"
             metascore = dictionary["Metascore"] ?? "NA"
             imdbRating = dictionary["imdbRating"] ?? "NA"
-            imdbID = dictionary["imbdID"] ?? "NA"
+            imdbID = dictionary["imdbID"] ?? "NA"
             posterURL = dictionary["Poster"] ?? "NA"
     }
     

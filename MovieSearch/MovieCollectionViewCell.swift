@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
+
     @IBOutlet weak var moviePoster: UIImageView!
+    
     
 }
 
