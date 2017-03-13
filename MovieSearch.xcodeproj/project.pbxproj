@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40285E3E1E76DB1C00093788 /* PlotSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40285E3D1E76DB1C00093788 /* PlotSummaryViewController.swift */; };
 		402C3EC71E74AC3000D4D16C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C3EC61E74AC3000D4D16C /* MovieViewController.swift */; };
 		402C3EC91E75B88800D4D16C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C3EC81E75B88800D4D16C /* MovieDetailsViewController.swift */; };
 		403625A11E7326ED00DE36E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403625A01E7326ED00DE36E7 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40285E3D1E76DB1C00093788 /* PlotSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotSummaryViewController.swift; sourceTree = "<group>"; };
 		402C3EC61E74AC3000D4D16C /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		402C3EC81E75B88800D4D16C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		4036259D1E7326ED00DE36E7 /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				403625A01E7326ED00DE36E7 /* AppDelegate.swift */,
 				403625A41E7326ED00DE36E7 /* Main.storyboard */,
+				40285E3D1E76DB1C00093788 /* PlotSummaryViewController.swift */,
 				402C3EC81E75B88800D4D16C /* MovieDetailsViewController.swift */,
 				402C3EC61E74AC3000D4D16C /* MovieViewController.swift */,
 				403625D31E73281400DE36E7 /* Movie.swift */,
@@ -275,6 +278,7 @@
 				403625D61E7331D900DE36E7 /* MovieCollectionViewCell.swift in Sources */,
 				402C3EC91E75B88800D4D16C /* MovieDetailsViewController.swift in Sources */,
 				403625A91E7326ED00DE36E7 /* MovieSearch.xcdatamodeld in Sources */,
+				40285E3E1E76DB1C00093788 /* PlotSummaryViewController.swift in Sources */,
 				403625A11E7326ED00DE36E7 /* AppDelegate.swift in Sources */,
 				402C3EC71E74AC3000D4D16C /* MovieViewController.swift in Sources */,
 			);

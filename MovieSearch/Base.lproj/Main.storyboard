@@ -154,6 +154,7 @@
                                 </state>
                                 <connections>
                                     <action selector="fullPlotAction:" destination="9J6-7E-wds" eventType="touchUpInside" id="zMJ-i5-AqG"/>
+                                    <segue destination="tek-EX-Y4W" kind="show" identifier="plotSummary" id="NLp-hS-bYS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -189,6 +190,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9O-wT-nOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6020" y="9.4452773613193415"/>
+        </scene>
+        <!--Plot Summary View Controller-->
+        <scene sceneID="3an-7F-sxk">
+            <objects>
+                <viewController id="tek-EX-Y4W" customClass="PlotSummaryViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8CA-iG-PCM"/>
+                        <viewControllerLayoutGuide type="bottom" id="LqZ-BI-H3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N7e-Q1-VBU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLOT SUMMARY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eju-Jl-nUx">
+                                <rect key="frame" x="16" y="64" width="343" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plotSummary" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJn-yQ-ccS">
+                                <rect key="frame" x="16" y="131" width="343" height="533"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="pzt-MT-hH6">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="67.5"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Movies"/>
+                                    <segment title="Favorites"/>
+                                </segments>
+                                <connections>
+                                    <action selector="moviesfavSelection:" destination="9J6-7E-wds" eventType="valueChanged" id="dT8-pf-P5r"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJn-yQ-ccS" firstAttribute="bottom" secondItem="pzt-MT-hH6" secondAttribute="top" constant="63.5" id="1bm-32-YM3"/>
+                            <constraint firstItem="eju-Jl-nUx" firstAttribute="height" secondItem="N7e-Q1-VBU" secondAttribute="height" multiplier="0.1" id="DKx-cL-tcQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJn-yQ-ccS" secondAttribute="trailing" id="QkX-if-enx"/>
+                            <constraint firstItem="pzt-MT-hH6" firstAttribute="leading" secondItem="N7e-Q1-VBU" secondAttribute="leading" id="Z5h-d0-Gj1"/>
+                            <constraint firstItem="pzt-MT-hH6" firstAttribute="trailing" secondItem="N7e-Q1-VBU" secondAttribute="trailing" id="aa4-Jf-w4T"/>
+                            <constraint firstItem="eju-Jl-nUx" firstAttribute="trailing" secondItem="N7e-Q1-VBU" secondAttribute="trailingMargin" id="ala-3F-8Wg"/>
+                            <constraint firstItem="bJn-yQ-ccS" firstAttribute="height" secondItem="N7e-Q1-VBU" secondAttribute="height" multiplier="0.8" id="eIB-FY-V8Q"/>
+                            <constraint firstItem="eju-Jl-nUx" firstAttribute="leading" secondItem="N7e-Q1-VBU" secondAttribute="leadingMargin" id="hMs-nI-5Vv"/>
+                            <constraint firstItem="bJn-yQ-ccS" firstAttribute="leading" secondItem="N7e-Q1-VBU" secondAttribute="leadingMargin" id="hkA-4D-8bQ"/>
+                            <constraint firstItem="pzt-MT-hH6" firstAttribute="bottom" secondItem="N7e-Q1-VBU" secondAttribute="bottom" id="izq-Y2-ePt"/>
+                            <constraint firstItem="pzt-MT-hH6" firstAttribute="height" secondItem="N7e-Q1-VBU" secondAttribute="height" multiplier="0.1" id="nDt-Ri-LF1"/>
+                            <constraint firstItem="eju-Jl-nUx" firstAttribute="top" secondItem="8CA-iG-PCM" secondAttribute="bottom" id="rQI-MB-Wyh"/>
+                            <constraint firstItem="eju-Jl-nUx" firstAttribute="bottom" secondItem="bJn-yQ-ccS" secondAttribute="top" id="umQ-gG-O8t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="plotSummaryOutlet" destination="bJn-yQ-ccS" id="GeD-kG-ux1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzB-BZ-JyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7100" y="9.4452773613193415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ocg-Uc-z8K">
