@@ -86,7 +86,8 @@ class MovieViewController: UIViewController, UICollectionViewDelegate,UISearchBa
     func getMovies(searchString:String) {
         movieItems = []
         print("In getMovies")
-        let url = URL(string:"http://www.omdbapi.com/?s=\(searchString)")
+        guard let encodedSearch = searchString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+        let url = URL(string:"http://www.omdbapi.com/?s=\(encodedSearch)")
         let session = URLSession.shared
         guard let unwrappedUrl = url else {print("Invalid unwrappedUrl") ; return }
         
